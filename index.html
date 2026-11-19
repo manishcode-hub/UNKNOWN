@@ -1,0 +1,1178 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CUTIE ❤️ MANISH</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+
+    <!-- =========================================
+         EFFECTS
+    ========================================== -->
+
+    <div id="floatingHearts"></div>
+
+    <div id="flowerRain"></div>
+
+
+    <!-- =========================================
+         MUSIC
+    ========================================== -->
+
+    <button
+        class="music-button"
+        id="musicButton"
+        onclick="toggleMusic()"
+    >
+        🎵
+    </button>
+
+
+    <audio
+        id="backgroundMusic"
+        loop
+    >
+        <source
+            src="perfect.mp3"
+            type="audio/mpeg"
+        >
+    </audio>
+
+
+
+    <!-- =========================================
+         WELCOME SCREEN
+    ========================================== -->
+
+    <section
+        class="screen active"
+        id="welcomeScreen"
+    >
+
+        <div class="cloud cloud-one">
+            ☁️
+        </div>
+
+        <div class="cloud cloud-two">
+            ☁️
+        </div>
+
+
+        <div class="welcome-card">
+
+            <div class="tiny-flowers">
+                🌸 🌷 🌸
+            </div>
+
+
+            <div class="crown">
+                👑
+            </div>
+
+
+            <p class="little-heading">
+                A little something for
+            </p>
+
+
+            <h1>
+                CUTIE
+                <span>❤️</span>
+            </h1>
+
+
+            <div class="heart-line">
+                ─── ♥ ───
+            </div>
+
+
+            <p class="welcome-message">
+
+                Hey Cutie... ❤️
+
+                <br><br>
+
+                I made a little world
+                just for you.
+
+                <br><br>
+
+                No reason.
+                No special occasion.
+
+                <br><br>
+
+                Just because
+                you are special to me.
+
+            </p>
+
+
+            <button
+                class="cute-button"
+                onclick="enterWebsite()"
+            >
+
+                ✨ Tap to Enter ✨
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         MESSAGE SCREEN
+    ========================================== -->
+
+    <section
+        class="screen"
+        id="messageScreen"
+    >
+
+        <div class="message-card">
+
+            <div
+                class="big-emoji"
+                id="messageEmoji"
+            >
+                🌸
+            </div>
+
+
+            <p class="little-heading">
+                Just for you
+            </p>
+
+
+            <h2 id="messageTitle">
+                You are special
+            </h2>
+
+
+            <p id="messageText">
+
+                Some people make
+                ordinary moments
+                feel beautiful.
+
+                <br><br>
+
+                You're one of those people. ❤️
+
+            </p>
+
+
+            <button
+                class="cute-button"
+                onclick="nextMessage()"
+            >
+
+                💕 Next
+
+            </button>
+
+
+            <div class="dots">
+
+                <span class="dot active-dot"></span>
+
+                <span class="dot"></span>
+
+                <span class="dot"></span>
+
+                <span class="dot"></span>
+
+                <span class="dot"></span>
+
+            </div>
+
+
+            <button
+                class="back-link"
+                onclick="showScreen('welcomeScreen')"
+            >
+
+                ← Back
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         REASONS
+    ========================================== -->
+
+    <section
+        class="screen"
+        id="reasonsScreen"
+    >
+
+        <div class="reasons-wrapper">
+
+            <p class="little-heading">
+                Little things I notice
+            </p>
+
+
+            <h2>
+                Reasons You're Special ❤️
+            </h2>
+
+
+            <div class="reason-card">
+
+                <div
+                    class="reason-emoji"
+                    id="reasonEmoji"
+                >
+                    😊
+                </div>
+
+
+                <div
+                    class="reason-number"
+                    id="reasonNumber"
+                >
+                    01
+                </div>
+
+
+                <h3 id="reasonTitle">
+                    Your Smile
+                </h3>
+
+
+                <p id="reasonText">
+
+                    Your smile has this
+                    strange ability to make
+                    everything feel a little better.
+
+                </p>
+
+            </div>
+
+
+            <div class="reason-buttons">
+
+                <button
+                    class="round-button"
+                    onclick="previousReason()"
+                >
+                    ←
+                </button>
+
+
+                <button
+                    class="round-button"
+                    onclick="nextReason()"
+                >
+                    →
+                </button>
+
+            </div>
+
+
+            <button
+                class="back-link"
+                onclick="showScreen('princessScreen')"
+            >
+
+                ← Back to Princess World
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         PRINCESS WORLD
+    ========================================== -->
+
+    <section
+        class="screen"
+        id="princessScreen"
+    >
+
+        <div class="princess-wrapper">
+
+
+            <div class="princess-title">
+
+                <span>👑</span>
+
+                <h2>
+                    Princess World
+                </h2>
+
+                <span>👑</span>
+
+            </div>
+
+
+            <p class="intro-text">
+
+                Because sometimes
+                you deserve a little
+                princess treatment. 🌸
+
+            </p>
+
+
+            <div class="cute-menu">
+
+
+                <!-- FLOWERS -->
+
+                <button
+                    class="cute-menu-card pink-card"
+                    onclick="showFlowers()"
+                >
+
+                    <span class="menu-icon">
+                        🌹
+                    </span>
+
+                    <strong>
+                        Flowers for You
+                    </strong>
+
+                    <small>
+                        A little garden for you
+                    </small>
+
+                </button>
+
+
+
+                <!-- CROWN -->
+
+                <button
+                    class="cute-menu-card purple-card"
+                    onclick="showCrown()"
+                >
+
+                    <span class="menu-icon">
+                        👑
+                    </span>
+
+                    <strong>
+                        Your Crown
+                    </strong>
+
+                    <small>
+                        Because you're royalty
+                    </small>
+
+                </button>
+
+
+
+                <!-- LETTER -->
+
+                <button
+                    class="cute-menu-card cream-card"
+                    onclick="openLetter()"
+                >
+
+                    <span class="menu-icon">
+                        💌
+                    </span>
+
+                    <strong>
+                        Open My Letter
+                    </strong>
+
+                    <small>
+                        Something from my heart
+                    </small>
+
+                </button>
+
+
+
+                <!-- REASONS -->
+
+                <button
+                    class="cute-menu-card blue-card"
+                    onclick="showScreen('reasonsScreen')"
+                >
+
+                    <span class="menu-icon">
+                        ✨
+                    </span>
+
+                    <strong>
+                        Reasons You're Special
+                    </strong>
+
+                    <small>
+                        A few things I adore
+                    </small>
+
+                </button>
+
+
+
+                <!-- SECRET MESSAGE -->
+
+                <button
+                    class="cute-menu-card secret-card"
+                    onclick="openSecretVault()"
+                >
+
+                    <span class="menu-icon">
+                        🔐
+                    </span>
+
+                    <strong>
+                        Secret Message
+                    </strong>
+
+                    <small>
+                        Only for you...
+                    </small>
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- POETRY -->
+
+            <button
+                class="cute-button"
+                onclick="showPoetry()"
+            >
+
+                🌙 A Little Poetry
+
+            </button>
+
+
+            <br>
+
+
+            <!-- FINAL SURPRISE -->
+
+            <button
+                class="surprise-button"
+                onclick="finalSurprise()"
+            >
+
+                🎁 One Last Surprise
+
+            </button>
+
+
+            <br>
+
+
+            <button
+                class="back-link"
+                onclick="showScreen('messageScreen')"
+            >
+
+                ← Back
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         POETRY
+    ========================================== -->
+
+    <section
+        class="screen poetry-screen"
+        id="poetryScreen"
+    >
+
+        <div class="poetry-wrapper">
+
+            <div class="stars">
+                ✦ ✧ ✦ ✧ ✦
+            </div>
+
+
+            <div class="moon">
+                🌙
+            </div>
+
+
+            <p class="little-heading">
+                A few words for you
+            </p>
+
+
+            <div class="poetry-paper">
+
+                <div class="paper-flower">
+                    🌸
+                </div>
+
+
+                <p>
+
+                    "Tere bina khushi ki
+                    aadat kahan thi,
+
+                    <br>
+
+                    tere saath hoon toh lagta hai
+                    sab kuchh hai."
+
+                </p>
+
+
+                <div class="poetry-author">
+
+                    — For CUTIE ❤️
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="back-link light-back"
+                onclick="showScreen('princessScreen')"
+            >
+
+                ← Come Back
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         FINAL SURPRISE
+    ========================================== -->
+
+    <section
+        class="screen final-screen"
+        id="finalScreen"
+    >
+
+        <div class="final-wrapper">
+
+            <div class="final-flowers">
+                🌸 🌹 🌸
+            </div>
+
+
+            <div class="final-crown">
+                👑
+            </div>
+
+
+            <h1>
+                CUTIE
+            </h1>
+
+
+            <div class="final-heart">
+                ❤️
+            </div>
+
+
+            <p class="final-intro">
+
+                And if you ever forget
+                how special you are...
+
+            </p>
+
+
+            <p class="final-pause">
+
+                just remember this.
+
+            </p>
+
+
+            <div class="final-divider">
+                ✦ ✦ ✦
+            </div>
+
+
+            <h2>
+                You are enough.
+            </h2>
+
+
+            <p class="final-text">
+
+                You don't need to be perfect
+                to be precious.
+
+                <br><br>
+
+                You don't need to do anything
+                to deserve love.
+
+                <br><br>
+
+                Just being you is enough.
+
+            </p>
+
+
+            <div class="final-signature">
+
+                With love,
+
+                <br>
+
+                <strong>
+                    MANISH ❤️
+                </strong>
+
+            </div>
+
+
+            <p class="final-note">
+
+                Always remember that. ✨
+
+            </p>
+
+
+            <button
+                class="back-link"
+                onclick="showScreen('princessScreen')"
+            >
+
+                ← Back to my little world
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         SECRET VAULT
+    ========================================== -->
+
+    <section
+        class="screen secret-screen"
+        id="secretScreen"
+    >
+
+        <div class="secret-vault">
+
+            <div
+                class="vault-lock"
+                id="vaultLock"
+            >
+                🔒
+            </div>
+
+
+            <p class="little-heading">
+
+                A message hidden for you
+
+            </p>
+
+
+            <h2>
+                SECRET MESSAGE
+            </h2>
+
+
+            <div class="locked-line">
+                ━━━━━━━━━━━━━
+            </div>
+
+
+            <p class="vault-instruction">
+
+                ENTER THE NAME OF YOUR
+                LOVING MAN IN CAPITAL LETTERS
+
+            </p>
+
+
+            <input
+                type="text"
+                id="secretPassword"
+                class="secret-input"
+                placeholder="ENTER NAME HERE"
+                autocomplete="off"
+            >
+
+
+            <button
+                class="unlock-button"
+                onclick="unlockSecret()"
+            >
+
+                🔓 UNLOCK SECRET
+
+            </button>
+
+
+            <p
+                id="secretError"
+                class="secret-error"
+            >
+            </p>
+
+
+
+            <!-- HIDDEN SECRET MESSAGE -->
+
+            <div
+                id="secretMessage"
+                class="secret-message"
+            >
+
+                <div class="unlocked-icon">
+                    🔓 ❤️
+                </div>
+
+
+                <p class="unlocked-text">
+                    ACCESS GRANTED
+                </p>
+
+
+                <h3>
+                    For My CUTIE
+                </h3>
+
+
+                <div class="secret-divider">
+                    ✦ 🌹 ✦
+                </div>
+
+
+                <p>
+
+                    Cutie... ❤️
+
+                    <br><br>
+
+                    If you reached this message,
+                    then congratulations...
+
+                    <br><br>
+
+                    You remembered the person
+                    who is completely crazy about you. 😭❤️
+
+                    <br><br>
+
+                    You're not just beautiful.
+
+                    <br>
+
+                    You're caring.
+
+                    <br>
+
+                    You're kind.
+
+                    <br>
+
+                    You're supportive.
+
+                    <br>
+
+                    You're cute.
+
+                    <br>
+
+                    You're wonderfully annoying sometimes. 😂
+
+                    <br><br>
+
+                    And somehow,
+                    you're all of these things
+                    at the same time.
+
+                    <br><br>
+
+                    I don't know what the future
+                    looks like...
+
+                    <br><br>
+
+                    But I'm really glad
+                    you're a part of my present.
+
+                </p>
+
+
+                <div class="secret-final">
+
+                    Some people are special.
+
+                    <br>
+
+                    And then there is you. ❤️
+
+                </div>
+
+
+                <div class="secret-signature">
+
+                    — MANISH
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="back-link"
+                onclick="showScreen('princessScreen')"
+            >
+
+                ← Back to Princess World
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         💌 PERSONALIZED LOVE LETTER
+    ========================================== -->
+
+    <div
+        class="modal"
+        id="letterModal"
+    >
+
+        <div class="letter-paper">
+
+
+            <button
+                class="close-button"
+                onclick="closeLetter()"
+            >
+
+                ×
+
+            </button>
+
+
+            <div class="letter-top">
+                💌
+            </div>
+
+
+            <div class="letter-small-title">
+
+                A LETTER FROM THE HEART
+
+            </div>
+
+
+            <h2>
+
+                Dear CUTIE,
+
+            </h2>
+
+
+            <div class="letter-content">
+
+
+                <p>
+
+                    Cutie... ❤️
+
+                    <br><br>
+
+                    I don't think I can properly
+                    explain how special you are
+                    to me in just a few words.
+
+                    But still,
+                    I wanted to try.
+
+                </p>
+
+
+                <p>
+
+                    You're one of those people
+                    who somehow make ordinary
+                    moments feel different.
+
+                    <br><br>
+
+                    Your smile,
+                    your way of talking,
+                    your caring nature,
+                    and even your cute anger...
+
+                    😂❤️
+
+                    <br><br>
+
+                    All these little things
+                    have become special to me.
+
+                </p>
+
+
+                <p>
+
+                    I love your smile.
+
+                    <br>
+
+                    I love the way you talk.
+
+                    <br>
+
+                    I love your cute anger.
+
+                    <br>
+
+                    I love your kindness.
+
+                    <br>
+
+                    I love the way you care.
+
+                    <br>
+
+                    And I love the way
+                    you support me when
+                    I need you.
+
+                </p>
+
+
+                <p>
+
+                    But honestly...
+
+                    <br><br>
+
+                    It's not just about
+                    these little things.
+
+                    <br><br>
+
+                    It's about <strong>you.</strong>
+
+                    <br><br>
+
+                    The person you are.
+
+                    The way you make people
+                    feel comfortable.
+
+                    The way you can make
+                    a simple conversation
+                    feel memorable.
+
+                </p>
+
+
+                <div class="letter-final">
+
+                    "Some people enter your life
+                    quietly...
+
+                    <br><br>
+
+                    and somehow become
+                    one of the most beautiful
+                    parts of it."
+
+                </div>
+
+
+                <p>
+
+                    And I don't know exactly
+                    what the future holds.
+
+                    <br><br>
+
+                    But I do know one thing...
+
+                    <br><br>
+
+                    I'm genuinely happy
+                    that you're a part
+                    of my life.
+
+                </p>
+
+
+                <p>
+
+                    So whenever you doubt
+                    yourself,
+
+                    <br><br>
+
+                    whenever you feel
+                    you're not enough,
+
+                    <br><br>
+
+                    please remember...
+
+                    <br><br>
+
+                    <strong>
+                        You are someone
+                        very special to me. ❤️
+                    </strong>
+
+                </p>
+
+
+                <p>
+
+                    Thank you for simply
+                    being you.
+
+                    ❤️
+
+                </p>
+
+
+            </div>
+
+
+            <div class="letter-signature">
+
+                Always yours,
+
+                <br>
+
+                <strong>
+                    MANISH ❤️
+                </strong>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         POPUP
+    ========================================== -->
+
+    <div
+        class="popup"
+        id="popup"
+    >
+
+        <div class="popup-box">
+
+
+            <button
+                class="close-button"
+                onclick="closePopup()"
+            >
+
+                ×
+
+            </button>
+
+
+            <div
+                id="popupEmoji"
+                class="big-emoji"
+            >
+
+                ❤️
+
+            </div>
+
+
+            <h2 id="popupTitle">
+
+                For CUTIE
+
+            </h2>
+
+
+            <p id="popupMessage">
+
+                You are special.
+
+            </p>
+
+
+            <button
+                class="cute-button"
+                onclick="closePopup()"
+            >
+
+                ❤️ Close
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
